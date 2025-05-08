@@ -11,7 +11,7 @@ This is my personal log where I document what I learn each day as I explore the 
 
 I'm using this repository to:
 - Track and reflect on my daily learning progress.
-- Practice Python, statistics, machine learning, and related tools.
+- Practice Python, SQL, statistics, machine learning, and related tools.
 - Build a portfolio that shows my consistency and growth in the field.
 
 ---
@@ -34,6 +34,8 @@ Each folder or markdown file in this repository contains:
 ├── Python/                # Python fundamentals, NumPy, pandas, etc.
 ├── Statistics/            # Descriptive stats, probability, distributions
 ├── Machine-Learning/      # Supervised and unsupervised learning
+├── SQL/                   # MySQL basics, queries, joins, subqueries
 ├── Projects/              # Mini-projects and case studies
 ├── Daily-Logs/            # Day-wise notes (optional structure)
 └── README.md              # You're here!
+
