@@ -39,5 +39,15 @@ Python is a high-level, interpreted programming language known for its simplicit
 
 ```python
 print("Hello, World!")
+```
+---
+
+## 🔗 Resources
+
+- [📘 Python Official Documentation](https://docs.python.org/3/)
+- [📘 W3Schools Python Tutorial](https://www.w3schools.com/python/)
+- [📘 Real Python (Guides & Tutorials)](https://realpython.com/)
+- [📘 Python Cheatsheet](https://www.pythoncheatsheet.org/)
+
 
 
