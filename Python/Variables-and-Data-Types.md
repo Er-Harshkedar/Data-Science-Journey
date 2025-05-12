@@ -81,8 +81,9 @@ height_int = int(height)
 
 ---
 
+
 ## 🔗 Resources
 
-- [📘 Mutable vs Immutable Types in Python (GeeksforGeeks)](https://www.geeksforgeeks.org/mutable-vs-immutable-objects-in-python/)
-- [📘 Understanding Mutable and Immutable Objects (Real Python)](https://realpython.com/pointers-in-python/#mutable-vs-immutable-objects)
-- [📘 Python Data Types (Official Docs)](https://docs.python.org/3/library/stdtypes.html)
+- [📘 Python Variables (W3Schools)](https://www.w3schools.com/python/python_variables.asp)
+- [📘 Python Data Types (GeeksforGeeks)](https://www.geeksforgeeks.org/python-data-types/)
+
