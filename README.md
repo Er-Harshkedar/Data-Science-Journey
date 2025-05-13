@@ -3,26 +3,21 @@
 # 📘 Data Science Journey
 
 Welcome to my **Data Science Journey** repository!  
-This is my personal log where I document what I learn each day as I explore the world of Data Science and Machine Learning.
+This is my personal learning log as I explore Data Science, Machine Learning, and Python.
 
 ---
 
-## 🚀 Purpose
+## 📅 How I Use This Repo
 
-I'm using this repository to:
-- Track and reflect on my daily learning progress.
-- Practice Python, SQL, statistics, machine learning, and related tools.
-- Build a portfolio that shows my consistency and growth in the field.
+Each folder contains topic-wise notes, code samples, and explanations I write in my own words as I learn. This helps me build strong fundamentals and revision material.
 
 ---
 
-## 📅 Daily Logs
+## 📌 Why I Built This
 
-Each folder or markdown file in this repository contains:
-- Notes on concepts I learned that day
-- Code snippets or Jupyter notebooks for practice
-- Small experiments or visualizations
-- Links to useful resources
+- To track my learning journey
+- To build discipline through daily/weekly contributions
+- To create a portfolio of real understanding (not just tutorials)
 
 ---
 
