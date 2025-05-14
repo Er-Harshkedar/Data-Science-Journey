@@ -29,7 +29,23 @@ else:
 ```
 Note: Python uses indentation (typically 4 spaces) to define code blocks. Curly braces {} are not used.
 
+
 ---
+
+
+## 🔢 Operators in Python
+
+Operators are symbols or keywords that perform operations on values or variables. They are used to manipulate data and variables in various ways, including performing arithmetic, logical, relational, and other operations.
+
+### Types of Operators:
+1. **Arithmetic Operators**: Used to perform basic mathematical operations like addition, subtraction, multiplication, etc.
+2. **Relational (Comparison) Operators**: Used to compare values and determine the relationship between them.
+3. **Logical Operators**: Used to combine conditional statements.
+4. **Assignment Operators**: Used to assign values to variables.
+5. **Bitwise Operators**: Perform bit-level operations on numbers.
+6. **Membership Operators**: Used to test if a sequence contains a certain value.
+7. **Identity Operators**: Used to compare the memory locations of two objects.
+
 
 
 ## 🧮 Comparison (Relational) Operators
