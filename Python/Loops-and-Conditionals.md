@@ -75,7 +75,7 @@ if age >= 18 and has_license:
 Loops allow you to execute a block of code multiple times.
 
 
-###🔸 For Loop
+🔸 For Loop
 
 Used to iterate over a sequence like a list, tuple, or a range.
 
@@ -94,7 +94,7 @@ names = ["Alice", "Bob", "Charlie"]
 for name in names:
     print(name)
 ```
-### 🔸 While Loop
+🔸 While Loop
 
 Repeats a block of code as long as a condition is true.
 
