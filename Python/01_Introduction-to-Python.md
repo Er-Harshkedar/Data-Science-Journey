@@ -1,6 +1,6 @@
 # 🐍 Introduction to Python
 
-Python is a high-level, interpreted programming language known for its simplicity, readability, and vast ecosystem of libraries. It is widely used in web development, automation, data analysis, artificial intelligence, and scientific computing.
+Python is a high-level, interpreted programming language known for its simplicity and versatility. In this repository, we’ll learn Python topic-wise, focusing on concepts essential for data science such as variables, loops, functions, file handling, OOP, and popular libraries like NumPy and Pandas.
 
 ---
 
