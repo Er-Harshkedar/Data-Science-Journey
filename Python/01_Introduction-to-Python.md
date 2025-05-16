@@ -4,12 +4,11 @@ Python is a high-level, interpreted programming language known for its simplicit
 
 ---
 
-## 🔹 Why Learn Python?
+## 🐍 Why Python for Data Science?
 
-- **Easy to Read and Write**: Clean syntax makes it beginner-friendly.
-- **Versatile**: From building web apps to analyzing data or training machine learning models.
-- **Large Community**: Tons of tutorials, open-source libraries, and active forums.
-- **In-demand Skill**: Highly sought-after in roles like data scientist, machine learning engineer, and software developer.
+Python is preferred over many other languages in data science because of its simplicity, readability, and vast ecosystem of libraries. 
+
+One major advantage is that **Python is an interpreted language**, meaning it does not need to be compiled before running. This makes it ideal for quick testing, data exploration, and interactive analysis — all of which are essential in data science workflows.
 
 ---
 
