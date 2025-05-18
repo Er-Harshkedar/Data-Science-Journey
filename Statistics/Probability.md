@@ -166,4 +166,7 @@ Probability is foundational in data science. From modeling uncertainty to poweri
 
 ---
 
+
+P(Woman ∩ Exercise) = <sup>17</sup>&frasl;<sub>200</sub> = 0.085 = 8.5%
+
 > ✍️ *Next: We'll dive deeper into discrete vs continuous distributions, expected value, and real-world use cases in data science.*
