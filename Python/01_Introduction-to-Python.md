@@ -54,7 +54,7 @@ Python is a powerful and flexible language that has become the go-to choice for 
 
 ## 📚 Learning Structure in This Repository
 
-In this repository, Python is structured and explained **topic-wise** instead of day-wise to ensure clarity and better long-term reference. Each topic is covered in its own Markdown file under the `Python/` folder, making it easier to focus and revise specific concepts.
+In this repository, Python is structured and explained **topic-wise** to ensure clarity and better long-term reference. Each topic is covered in its own Markdown file under the `Python/` folder, making it easier to focus and revise specific concepts.
 
 ### The learning path includes:
 - Variables and Data Types
