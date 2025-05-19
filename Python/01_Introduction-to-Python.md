@@ -51,6 +51,31 @@ Python is a powerful and flexible language that has become the go-to choice for 
 
 ---
 
+
+## 📚 Learning Structure in This Repository
+
+In this repository, Python is structured and explained **topic-wise** instead of day-wise to ensure clarity and better long-term reference. Each topic is covered in its own Markdown file under the `Python/` folder, making it easier to focus and revise specific concepts.
+
+### The learning path includes:
+- Variables and Data Types
+- Loops and Conditional Statements
+- Functions
+- File Handling
+- Object-Oriented Programming (OOP)
+- NumPy and Pandas for data manipulation
+
+Each file includes:
+- Simple explanations
+- Syntax and structure
+- Examples and best practices
+- Resource links for further reading
+
+This topic-based structure helps create a strong Python foundation tailored for a career in data science.
+
+
+---
+
+
 ## 🚀 First Python Program
 
 ```python
