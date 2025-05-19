@@ -70,7 +70,6 @@ Each file includes:
 - Examples and best practices
 - Resource links for further reading
 
-This topic-based structure helps create a strong Python foundation tailored for a career in data science.
 
 
 ---
