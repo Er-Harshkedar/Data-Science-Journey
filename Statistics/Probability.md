@@ -207,7 +207,7 @@ $5P3 = \frac{5!}{2!} = 60$
 
 ### Combinations 
 
-With combinations the order doesn't matter
+A combination is a way of selecting items from a group, where the order does not matter.
 
 #### Find Combinations Without Repetition:
 
@@ -218,13 +218,45 @@ $10C3 = \frac{10!}{3!*7!} = 120$
 
 #### With Repetition:
 
-$C(n + x - 1, x) = \frac{(n + x - 1)!}{x!(n-1)!}$
+$nC_x = \frac{(n + x - 1)!}{x!(n-1)!}$
 
 **Example:** Reuse lottery number this time:
-$C(10 + 3 - 1, 3) = C(12, 3) = 220$
+$10C3 = \frac{3+10-1!}{3!*9!} = 220$
+
+
+Variation
+
+A variation is a way of selecting and arranging items from a group, where the order does matter.
+
+Formula (Without Repetition):
+
+$nV_p = \frac{n!}{n-p!}$
+
+Example:
+
+Pick 3 runners for a race from 5:
+
+$$
+^5P_3 = \frac{5!}{(5 - 3)!} = \frac{120}{2} = 60
+$$
+
+Formula (With Repetition):
+
+$$
+\text{Total Variations} = n^r
+$$
+
+
+Example:
+
+Lock with 3 digits (0–9):
+
+$$
+10^3 = 1000
+$$
+
 
 ---
-
 
 
 ## Summary of Combinatorics
