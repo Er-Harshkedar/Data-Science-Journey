@@ -193,73 +193,45 @@ The number of ways to arrange $n$ distinct items:
 $n! = n \cdot (n-1) \cdot (n-2) \cdots 1$
 
 **Example:**
+
+There are 24 ways to arrange 4 items
 $4! = 4 \cdot 3 \cdot 2 \cdot 1 = 24$
 
-### Permutations of x from n (nPx):
+### Permutations of x from n (nPx)
 
+Numbers of Permutations of $x$ items chosen from $n$ items:
 $nP_x = \frac{n!}{(n - x)!}$
 
-**Example:** 3 runners out of 5:
+**Example:** Pick 3 runners from a group of 5:
 $5P3 = \frac{5!}{2!} = 60$
 
-### Combinations (Order Doesn't Matter)
+### Combinations 
 
-#### Without Repetition:
+With combinations the order doesn't matter
+
+#### Find Combinations Without Repetition:
 
 $nC_x = \frac{n!}{x!(n-x)!}$
 
-**Example:** 3 out of 10:
-$10C3 = 120$
+**Example:** Pick 3 winning lottery number in any order:
+$10C3 = \frac{10!}{3!*7!} = 120$
 
 #### With Repetition:
 
 $C(n + x - 1, x) = \frac{(n + x - 1)!}{x!(n-1)!}$
 
-**Example:** Choose 3 from 10 with repetition:
+**Example:** Reuse lottery number this time:
 $C(10 + 3 - 1, 3) = C(12, 3) = 220$
 
 ---
 
-## Poker Hand Probabilities
 
-### Four of a Kind
-
-* Choose value: 13 options
-* Choose suits: 4 for the selected value
-* Choose 5th card from remaining: 12 cards
-* Choose its suit: 4 options
-
-$13 \cdot 1 \cdot 12 \cdot 1 = 624$
-
-### Full House
-
-* Choose 3 of a kind: $C(13,1) \cdot C(4,3) = 13 \cdot 4$
-* Choose pair: $C(12,1) \cdot C(4,2) = 12 \cdot 6$
-
-$13 \cdot 4 \cdot 12 \cdot 6 = 3744$
-
-Total number of poker hands:
-$C(52,5) = 2,598,960$
-
-Probability of Full House:
-$\frac{3744}{2598960} \approx 0.00144 = 0.14\%$
-
----
 
 ## Summary of Combinatorics
 
 * **Permutations**: Order matters, no repetition
 * **Combinations**: Order doesn't matter
 * **Variations**: Elements > positions, can include repetition
-
-**Example (With Repetition):**
-
-* Combination lock with 3 digits: $10^3 = 1000$
-
-**Without Repetition:**
-
-* 3 Pokémon cards from 5:
-  $5P3 = 60$
 
 ---
 
