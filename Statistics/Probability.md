@@ -275,7 +275,7 @@ Random variables represent possible outcomes of a random process.
 * **Countably Infinite**: Infinite but listable
 * **Uncountable Infinite**: Cannot be listed
 
-Examples include outcomes from dice rolls, measurements of height, or test scores.
+
 
 
 ---
