@@ -19,9 +19,9 @@ class Dog:
 my_dog = Dog("Bruno")
 my_dog.speak()  # Output: Bruno says Woof!
 ```
-- Dog is a class.
-- my_dog is an object (or instance) of the class.
-- __init__ is a special method called a constructor that runs when an object is created.
+- **Dog** is a class.
+- **my_dog** is an object (or instance) of the class.
+- **__init__** is a special method called a constructor that runs when an object is created.
 
 
 ---
@@ -44,6 +44,10 @@ class Dog(Animal):
 pet = Dog()
 pet.move()  # Inherited from Animal
 pet.bark()  # Defined in Dog
+
+# Output Animal moves
+Dog barks
+
 ```
 🧠 Inheritance promotes code reuse and simplifies large programs.
 
@@ -66,6 +70,10 @@ class Dog:
 
 for animal in [Cat(), Dog()]:
     animal.speak()
+
+# output Meow
+Woof
+
 ```
 - Both Cat and Dog have a speak() method.
 - The same method name works differently depending on the object.
@@ -76,7 +84,7 @@ for animal in [Cat(), Dog()]:
 
 ## 4. 🔐 Encapsulation (Hiding the Data)
 
-Encapsulation means keeping data safe by restricting direct access. Private variables are indicated with double underscores $__$.
+Encapsulation means keeping data safe by restricting direct access. Private variables are indicated with double underscores __.
 
 ```python
 class BankAccount:
