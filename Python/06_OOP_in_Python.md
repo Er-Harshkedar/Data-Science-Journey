@@ -19,9 +19,9 @@ class Dog:
 my_dog = Dog("Bruno")
 my_dog.speak()  # Output: Bruno says Woof!
 ```
-- $Dog$ is a class.
-- $my_dog$ is an object (or instance) of the class.
-- $__init__$ is a special method called a constructor that runs when an object is created.
+- Dog is a class.
+- my_dog is an object (or instance) of the class.
+- __init__ is a special method called a constructor that runs when an object is created.
 
 
 ---
