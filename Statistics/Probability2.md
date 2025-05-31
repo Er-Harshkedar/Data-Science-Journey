@@ -26,10 +26,7 @@ x_1, x_2, x_3, ..., x_n
 
 The PMF is:
 
-\[
-P(X = x_i) = \frac{1}{n}, \quad \text{for } i = 1, 2, ..., n
-\]
-
+P(X = xi) = 1 / n for i = 1, 2, ..., n
 ---
 
 ## 🧮 Example
@@ -39,9 +36,7 @@ P(X = x_i) = \frac{1}{n}, \quad \text{for } i = 1, 2, ..., n
 Possible outcomes: {1, 2, 3, 4, 5, 6}  
 Each number has an equal chance of appearing:
 
-\[
-P(X = x) = \frac{1}{6}, \quad \text{for } x = 1, 2, 3, 4, 5, 6
-\]
+P(X = x) = 1 / 6 for x = 1 to 6
 
 ---
 
@@ -49,16 +44,14 @@ P(X = x) = \frac{1}{6}, \quad \text{for } x = 1, 2, 3, 4, 5, 6
 
 For a discrete uniform distribution with values \( a, a+1, ..., b \):
 
-- **Mean**:  
-  \[
-  \mu = \frac{a + b}{2}
-  \]
+- **Mean**:
+  
+  μ = (a + b) / 2
 
 - **Variance**:  
-  \[
-  \sigma^2 = \frac{(b - a + 1)^2 - 1}{12}
-  \]
 
+  σ² = [(b - a + 1)^2 - 1] / 12
+  
 ---
 
 ## 🧠 Applications
