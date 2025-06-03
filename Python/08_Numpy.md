@@ -139,5 +139,145 @@ np.column_stack([a, b])  # [[1,4],
 ---
 
 
-## 🔁 Useful NumPy Functions
+## Attributes of a multidim array
+```python
+data = np.array([[1, 2, 3], [4, 5, 6]])
+data = np.array(list3)
 
+
+print('Dimensions:',data.ndim)   # Dimensions: 2
+print ('Shape:',data.shape)      # Shape: (2, 3)
+print('Size:', data.size)        # Size: 6
+```
+
+
+```python
+# You can also transpose an array Matrix with either np.transpose(arr)
+# or arr.T
+data.T
+
+''' Output: array([[1, 4],
+                   [2, 5],
+                   [3, 6]])'''
+
+```
+
+---
+
+
+##  Vectorization and Broadcasting
+
+- Broadcasting allows NumPy to perform arithmetic operations on arrays of different shapes without explicit looping. This can simplify code and improve performance by leveraging low-level optimizations.
+
+```python
+import numpy as np
+
+# Create a 2D array (3x4)
+arr_2d = np.array([[1, 2, 3, 4],
+                   [5, 6, 7, 8],
+                   [9, 10, 11, 12]])
+
+# Create a 1D array (4,)
+arr_1d = np.array([[10], [20], [30]])
+
+# Add the 1D array to each row of the 2D array
+result = arr_2d + arr_1d
+
+print("2D array:\n", arr_2d)
+print("1D array:\n", arr_1d)
+print("Result of broadcasting:\n", result)
+
+''' Output : 2D array:
+ [[ 1  2  3  4]
+ [ 5  6  7  8]
+ [ 9 10 11 12]]
+1D array:
+ [[10]
+ [20]
+ [30]]
+Result of broadcasting:
+ [[11 12 13 14]
+ [25 26 27 28]
+ [39 40 41 42]]'''
+```
+
+
+- Vectorization refers to the ability to perform operations on entire arrays or portions of arrays at once, rather than using explicit loops. This is often more efficient and concise.
+
+
+```python
+import numpy as np
+
+# Create an array
+arr = np.array([1, 2, 3, 4, 5])
+
+# Compute the square of each element using vectorization
+squared = arr ** 2
+
+print("Original array:\n", arr)
+print("Squared array:\n", squared)
+
+''' Output: Original array:
+ [1 2 3 4 5]
+Squared array:
+ [ 1  4  9 16 25]'''
+```
+
+---
+
+## 🔁 Useful NumPy Functions
+```python
+np.zeros((2, 3))      # 2x3 array of zeros
+
+np.ones((2, 2))       # 2x2 array of ones
+
+np.eye(3)             # Identity matrix
+
+np.arange(0, 10, 2)   # [0 2 4 6 8]
+'''np.arange() is similar to built in range()
+Creates array with a range of consecutive numbers
+starts at 0 and step=1 if not specified. Exclusive of stop.'''
+
+
+np.linspace(0, 1, 5)  # [0.   0.25 0.5  0.75 1. ]
+# linspace: Create an array of numbers from a to b
+# with n equally spaced numbers (inclusive)
+
+
+# We can also easily find the sum, min, max, .. are easy
+print (a)
+print ('Sum:',a.sum())
+print('Min:', a.min())
+print('Max:', a.max())
+
+'''[[ 0  1  2  3  4]
+ [ 5  6  7  8  9]
+ [10 11 12 13 14]]
+
+Sum: 105
+Min: 0
+Max: 14'''
+```
+
+
+---
+
+## 🔃 Reshaping
+
+```python
+# Reshape is used to change the shape
+a = np.arange(0, 15)
+
+print('Original:',a)
+a = a.reshape(3, 5)
+# a = np.arange(0, 15).reshape(3, 5)  # same thing
+print ('Reshaped:')
+print(a)
+
+'''Output: Original: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14]
+Reshaped:
+[[ 0  1  2  3  4]
+ [ 5  6  7  8  9]
+ [10 11 12 13 14]]
+
+``` 
