@@ -244,19 +244,6 @@ np.linspace(0, 1, 5)  # [0.   0.25 0.5  0.75 1. ]
 # with n equally spaced numbers (inclusive)
 
 
-# We can also easily find the sum, min, max, .. are easy
-print (a)
-print ('Sum:',a.sum())
-print('Min:', a.min())
-print('Max:', a.max())
-
-'''[[ 0  1  2  3  4]
- [ 5  6  7  8  9]
- [10 11 12 13 14]]
-
-Sum: 105
-Min: 0
-Max: 14'''
 ```
 
 
@@ -278,6 +265,60 @@ print(a)
 Reshaped:
 [[ 0  1  2  3  4]
  [ 5  6  7  8  9]
+ [10 11 12 13 14]]'''
+
+
+# We can also easily find the sum, min, max, .. are easy
+print (a)
+print ('Sum:',a.sum())
+print('Min:', a.min())
+print('Max:', a.max())
+
+'''[[ 0  1  2  3  4]
+ [ 5  6  7  8  9]
  [10 11 12 13 14]]
 
+Sum: 105
+Min: 0
+Max: 14'''
 ``` 
+
+
+---
+
+
+## 💡 Why NumPy for Data Science?
+
+- Faster than Python lists (due to fixed type and vectorization)
+- Makes matrix and linear algebra operations easy
+- Supports broadcasting and advanced indexing
+- Foundation for libraries like Pandas and Scikit-learn
+
+
+
+--- 
+
+
+### 🔗 Resources
+
+📘 [NumPy Tutorial (W3Schools)](https://www.w3schools.com/python/numpy_intro.asp)  
+📘 [NumPy Basics (GeeksforGeeks)](https://www.geeksforgeeks.org/numpy-tutorial/)  
+📘 [NumPy User Guide (Official Docs)](https://numpy.org/doc/stable/user/)  
+
+
+--- 
+
+
+## 🚀 Use Cases of NumPy
+
+NumPy is a powerful tool used across many fields in data and scientific computing. Here are some of its key use cases:
+
+- **Data Analysis:** Fast computations on large datasets.
+- **Machine Learning:** Core operations like vectorization and data transformation.
+- **Scientific Computing:** Simulations, numerical modeling, and engineering calculations.
+- **Image & Signal Processing:** Manipulating pixels and signals as numerical arrays.
+- **Linear Algebra:** Matrix operations, solving equations, and transformations.
+- **Financial Modeling:** Time series data, simulations, and statistics.
+
+We'll explore many of these areas in detail later in this repository.
+
