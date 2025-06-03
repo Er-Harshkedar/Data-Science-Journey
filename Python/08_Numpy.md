@@ -15,7 +15,7 @@ pip install numpy
 
 Numpy provides the ndarray (n-dimensional array) which is faster and more memory-efficient than Python lists.
 
-##⚡ Why Are NumPy Arrays Faster Than Python Lists?
+## ⚡ Why Are NumPy Arrays Faster Than Python Lists?
 
 NumPy arrays are significantly faster than Python lists because of how they store data in memory:
 
@@ -49,4 +49,95 @@ print("List Time:", end - start)
 
 
 
+---
+
+
+## 📊 Creating NumPy Arrays
+
+```python
+import numpy as np
+
+# Creating arrays
+arr1 = np.array([1, 2, 3])
+arr2 = np.array([[1, 2], [3, 4]])
+```
+
+OR
+
+Simplest possible: We use a list as an argument input in making a NumPy Array
+
+```python
+# Create array from Python list
+list1 = [1, 2, 3, 4]
+data = np.array(list1)
+data
+
+# Output:  array([1, 2, 3, 4])
+```
+
+```python
+# See data type that is stored in the array
+data.dtype
+
+# The data types are specified for the full array, if we store
+# a float in an int array, the float will be up-casted to an int
+data[0] = 3.14159
+data
+# Output: array([3, 2, 3, 4])
+
+# NumPy converts to most logical data type
+data2 = np.array([1.2, 2, 3, 4])
+print(data2)
+print(data2.dtype) # all values will be converted to floats
+
+# Output: [1.2 2.  3.  4. ]
+float64
+# We can manually specify the datatype
+data3 = np.array([1, 2, 3], dtype=str)
+print(data3)
+```
+
+
+---
+
+
+## 🔍 Indexing and Slicing
+
+```python
+arr = np.array([10, 20, 30, 40, 50])
+print(arr[1])       # Output: 20
+print(arr[1:4])     # Output: [20 30 40]
+
+# more slicing
+x = np.array(range(18))
+print ('x:',x)     # Output: x: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17]
+print (x[5:15:2])  # Output: [ 5  7  9 11 13]
+```
+
+
+---
+
+
+## ➕ Basic Array Operations
+```python
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+
+print(a + b)        # [5 7 9]
+print(a * b)        # [4 10 18]
+print(a ** 2)       # [1 4 9]
+
+# if you need to join numpy arrays,
+# try hstack, vstack, column_stack, or concatenate
+np.hstack([a, bb])       # [1,2,3,4,5,6]
+np.column_stack([a, b])  # [[1,4],
+                         #  [2,5],
+                         #  [3,6]]
+```
+
+
+---
+
+
+## 🔁 Useful NumPy Functions
 
