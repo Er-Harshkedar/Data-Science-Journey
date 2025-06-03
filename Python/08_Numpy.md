@@ -131,8 +131,8 @@ print(a ** 2)       # [1 4 9]
 # try hstack, vstack, column_stack, or concatenate
 np.hstack([a, bb])       # [1,2,3,4,5,6]
 np.column_stack([a, b])  # [[1,4],
-                         #  [2,5],
-                         #  [3,6]]
+                            [2,5],
+                            [3,6]]
 ```
 
 
