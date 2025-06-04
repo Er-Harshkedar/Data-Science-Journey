@@ -163,11 +163,11 @@ Where:
 - The distribution is **memoryless**, meaning the probability of success in future trials does not depend on past failures.
 - Mean (Expected value):  
 \[
-E(X) = \frac{1}{p}
+E(X) = 1/p
 \]
 - Variance:  
 \[
-Var(X) = \frac{1 - p}{p^2}
+Var(X) = 1 - p/p^2
 \]
 
 ---
