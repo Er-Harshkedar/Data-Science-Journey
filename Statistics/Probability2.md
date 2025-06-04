@@ -133,3 +133,58 @@ P(X = 6) = \binom{10}{6} (0.5)^6 (0.5)^4 = \binom{10}{6} (0.5)^{10} = 210 \times
 - A/B testing in digital marketing
 
 
+
+---
+
+
+# Geometric Distribution
+
+**Definition:**  
+The geometric distribution models the number of trials needed to get the first success in a series of independent Bernoulli trials (yes/no experiments), each with the same probability of success \( p \).
+
+---
+
+## Probability Mass Function (PMF)
+
+\[
+P(X = k) = (1 - p)^{k-1} \cdot p
+\]
+
+Where:  
+- \( X \) = the trial on which the first success occurs  
+- \( k \) = trial number (1, 2, 3, ...)  
+- \( p \) = probability of success on each trial  
+- \( (1 - p) \) = probability of failure
+
+---
+
+## Properties
+
+- The distribution is **memoryless**, meaning the probability of success in future trials does not depend on past failures.
+- Mean (Expected value):  
+\[
+E(X) = \frac{1}{p}
+\]
+- Variance:  
+\[
+Var(X) = \frac{1 - p}{p^2}
+\]
+
+---
+
+## Example
+
+If the probability of success \( p = 0.2 \) in each trial, what is the probability that the first success occurs on the 3rd trial?
+
+\[
+P(X = 3) = (1 - 0.2)^{3-1} \times 0.2 = (0.8)^2 \times 0.2 = 0.128
+\]
+
+---
+
+## Usage in Data Science
+
+- Modeling the number of attempts until the first success (e.g., first click in an ad campaign).
+- Reliability analysis and survival analysis.
+- Any scenario with repeated independent trials until a success.
+
