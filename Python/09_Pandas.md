@@ -46,3 +46,17 @@ c    30
 dtype: int64
 ```
 
+🔍 Accessing Elements
+
+```python
+print(s['a'])     # Access by label → 10
+print(s[0])       # Access by position → 10
+```
+
+🛠️ Useful Attributes and Methods
+```python
+s.values      # returns array([10, 20, 30])
+s.index       # returns Index(['a', 'b', 'c'], dtype='object')
+s.sum()       # returns 60
+s.mean()      # returns 20.0
+```
