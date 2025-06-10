@@ -33,3 +33,16 @@ print(s)
 3    40
 dtype: int64
 ```
+You can also set custom labels (index):
+
+```python
+s = pd.Series([10, 20, 30], index=['a', 'b', 'c'])
+print(s)
+
+# Output:
+a    10
+b    20
+c    30
+dtype: int64
+```
+
