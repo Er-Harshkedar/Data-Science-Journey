@@ -11,3 +11,25 @@ Pandas allows you to:
 - Perform complex data analysis and aggregations with minimal code
 
 
+## 🧱 Pandas Series
+
+A **Series** is a one-dimensional labeled array that can hold any data type — integers, strings, floats, Python objects, etc.
+
+It’s like a column in a spreadsheet or database.
+
+### ✅ Creating a Series
+
+```python
+import pandas as pd
+
+# From a list
+data = [10, 20, 30, 40]
+s = pd.Series(data)
+print(s)
+
+# Output :0    10
+1    20
+2    30
+3    40
+dtype: int64
+```
