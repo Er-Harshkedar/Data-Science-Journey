@@ -60,3 +60,34 @@ s.index       # returns Index(['a', 'b', 'c'], dtype='object')
 s.sum()       # returns 60
 s.mean()      # returns 20.0
 ```
+
+
+
+---
+
+
+## 🧩 Pandas DataFrame
+
+A **DataFrame** is a two-dimensional, size-mutable, and heterogeneous data structure with labeled axes (rows and columns). Think of it like a table in SQL or an Excel spreadsheet.
+
+### ✅ Creating a DataFrame
+
+```python
+import pandas as pd
+
+# From a dictionary
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie'],
+    'Age': [25, 30, 35],
+    'City': ['New York', 'Paris', 'London']
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+
+# Output:      Name  Age      City
+0   Alice   25  New York
+1     Bob   30     Paris
+2  Charlie   35    London
+```
