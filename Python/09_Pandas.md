@@ -46,7 +46,7 @@ c    30
 dtype: int64
 ```
 
-🔍 Accessing Elements
+### 🔍 Accessing Elements
 
 ```python
 print(s['a'])     # Access by label → 10
@@ -86,8 +86,88 @@ df = pd.DataFrame(data)
 print(df)
 
 
-# Output:      Name  Age      City
+# Output:
+     Name  Age      City
 0   Alice   25  New York
 1     Bob   30     Paris
 2  Charlie   35    London
 ```
+
+
+---
+
+
+### 🔍 Accessing Data in a DataFrame
+
+Pandas offers flexible ways to access data from a DataFrame, whether by column, row, or individual cell.
+
+---
+
+#### 📌 Accessing Columns
+```python
+df['Name']           # Access a single column
+df[['Name', 'Age']]  # Access multiple columns
+```
+
+#### 📌 Accessing Rows
+
+```python
+df.iloc[0]      # Access by row index (integer location)
+df.loc[0]       # Access by row label (same as iloc if default index)
+```
+- iloc[] is used for positional indexing (0-based).
+- loc[] is used for label-based indexing (especially after custom indexing).
+
+
+#### 📌 Accessing a Cell
+```python
+df.loc[1, 'City']     # Get value from row 1, column 'City'
+df.iloc[1, 2]         # Same using position (row 1, column 2)
+```
+- Combines row and column access.
+- Returns a single value (scalar).
+
+
+---
+
+
+
+### 🧠 Descriptive Statistics in Pandas
+
+Pandas provides powerful built-in functions to quickly understand your dataset.
+
+---
+
+#### 📊 `df.describe()`
+Returns a summary of statistics for numeric columns, including:
+- **count** – Number of non-null values
+- **mean** – Average value
+- **std** – Standard deviation
+- **min**, **25%**, **50% (median)**, **75%**, **max** – Distribution percentiles
+
+```python
+df.describe()
+```
+
+ℹ️ df.info()
+
+- Gives a concise summary of the DataFrame:
+- Number of entries
+- Column names and data types
+- Non-null counts
+- Memory usage
+
+```python 
+df.info()
+```
+
+
+👀 df.head(n) / df.tail(n)
+- df.head() returns the first n rows (default = 5)
+- df.tail() returns the last n rows (default = 5)
+
+```python
+df.head()
+df.tail(3)
+```
+
