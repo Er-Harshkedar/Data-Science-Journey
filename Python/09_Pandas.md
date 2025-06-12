@@ -171,3 +171,23 @@ df.head()
 df.tail(3)
 ```
 
+---
+
+
+## 📥 Loading Data in Pandas
+
+Pandas makes it easy to load data from different file formats like CSV, Excel, and more.
+
+---
+
+### 📄 Loading CSV Files
+
+```python
+import pandas as pd
+
+df = pd.read_csv('data.csv')
+print(df.head())
+```
+- read_csv() is the most common way to import tabular data.
+- df.head() shows the first 5 rows to give a quick overview.
+- CSV files are widely used in data science for storing structured data.
