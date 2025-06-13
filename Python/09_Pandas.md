@@ -249,3 +249,44 @@ df[df['City'].isin(['NY', 'London'])]
 df[df['Name'].str.contains('li')]
 ```
 
+
+---
+
+
+
+## 🔃 Sorting Data in Pandas
+
+Sorting helps organize your data and makes it easier to analyze trends, rankings, and outliers.
+
+You can sort by one or multiple columns in ascending or descending order.
+
+---
+
+### 🔢 Sorting by One Column
+
+```python
+df.sort_values(by='Age')
+```
+- Sorts the DataFrame based on the 'Age' column in ascending order (default).
+
+### 🔻 Sorting in Descending Order
+```python
+df.sort_values(by='Age', ascending=False)
+```
+- Set ascending=False to sort from largest to smallest.
+
+
+### 🔗 Sorting by Multiple Columns
+```python
+df.sort_values(by=['City', 'Age'])
+```
+- Sorts first by 'City', then by 'Age' within each city group.
+
+
+### ⚙️ Sorting Index Instead of Values
+```python
+df.sort_index()
+```
+- Sorts the DataFrame by the row index.
+
+Sorting is especially useful when you're ranking data, preparing reports, or want to visually inspect ordered data.
