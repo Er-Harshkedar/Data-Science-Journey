@@ -239,3 +239,13 @@ df[(df['Age'] > 28) | (df['City'] == 'Paris')]
 df[df['City'] == 'NY']
 ```
 
+
+### 🔁 Filtering Using .isin() and .str.contains()
+```python
+# Using isin() for multiple values
+df[df['City'].isin(['NY', 'London'])]
+
+# Using string matching
+df[df['Name'].str.contains('li')]
+```
+
