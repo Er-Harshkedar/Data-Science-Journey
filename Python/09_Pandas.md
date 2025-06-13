@@ -191,3 +191,51 @@ print(df.head())
 - read_csv() is the most common way to import tabular data.
 - df.head() shows the first 5 rows to give a quick overview.
 - CSV files are widely used in data science for storing structured data.
+
+
+---
+
+
+## 🔍 Filtering Data in Pandas
+
+Filtering allows you to select rows that meet certain conditions — similar to WHERE clauses in SQL.
+
+This is useful when you only want to work with specific subsets of your data, like finding users above a certain age, or products with high sales.
+
+---
+
+### 🧪 Example: Filtering with Conditions
+
+```python
+import pandas as pd
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David'],
+    'Age': [25, 32, 30, 28],
+    'City': ['NY', 'Paris', 'London', 'NY']
+}
+
+df = pd.DataFrame(data)
+
+# Filter: People older than 28
+df[df['Age'] > 28]
+```
+
+
+### 🔗 Combining Multiple Conditions
+```python
+# AND condition
+df[(df['Age'] > 28) & (df['City'] == 'NY')]
+
+# OR condition
+df[(df['Age'] > 28) | (df['City'] == 'Paris')]
+```
+- Use & for AND, | for OR
+- Wrap each condition in parentheses!
+
+
+### ❓ Filtering by Text Match
+```python
+df[df['City'] == 'NY']
+```
+
