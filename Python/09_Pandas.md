@@ -457,3 +457,12 @@ df.to_excel('output.xlsx', index=False)
 
 **Exporting helps you save results, automate reports, and prepare datasets for dashboards or machine learning models.**
 
+
+---
+
+
+## 🔗 Resources
+
+📘 [Pandas Tutorial (W3Schools)](https://www.w3schools.com/python/pandas/default.asp)  
+📘 [Pandas Basics (GeeksforGeeks)](https://www.geeksforgeeks.org/python-pandas/)  
+📘 [Pandas Documentation (Official)](https://pandas.pydata.org/docs/)
