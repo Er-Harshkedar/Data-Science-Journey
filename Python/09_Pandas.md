@@ -389,3 +389,42 @@ df.groupby('City')['Age'].agg(['mean', 'min', 'max'])
 - Apply multiple aggregation functions at once.
 
 **Grouping and aggregation simplify complex data into meaningful summaries.**
+
+
+---
+
+
+## 🔗 Merging and Joining DataFrames in Pandas
+
+Often, data is split across multiple tables. Pandas allows you to combine them efficiently using merges and joins — similar to SQL operations.
+
+---
+
+### 🔄 Merging Two DataFrames
+
+```python
+pd.merge(df1, df2, on='id')
+```
+- Merges df1 and df2 where the values in the 'id' column match.
+
+### 🧭 Types of Joins
+```python
+pd.merge(df1, df2, how='inner', on='id')   # Only matching rows
+pd.merge(df1, df2, how='left', on='id')    # All from df1, match from df2
+pd.merge(df1, df2, how='right', on='id')   # All from df2, match from df1
+pd.merge(df1, df2, how='outer', on='id')   # All rows, matched when possible
+```
+
+### 🧱 Joining on Index
+```python
+df1.join(df2, how='inner')
+```
+- Combines DataFrames using their indexes instead of a specific column.
+
+### 🛠️ Concatenating DataFrames
+```python
+pd.concat([df1, df2])
+```
+- Stacks DataFrames vertically (row-wise) or horizontally (column-wise using axis=1).
+
+**Merging and joining are crucial when integrating data from multiple sources like databases, APIs, or separate CSV files.**
