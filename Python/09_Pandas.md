@@ -428,3 +428,32 @@ pd.concat([df1, df2])
 - Stacks DataFrames vertically (row-wise) or horizontally (column-wise using axis=1).
 
 **Merging and joining are crucial when integrating data from multiple sources like databases, APIs, or separate CSV files.**
+
+
+---
+
+
+## 📤 Exporting Data in Pandas
+
+Once your data analysis or cleaning is done, you'll often want to save your results to share or use later. Pandas makes exporting easy.
+
+---
+
+### 📄 Exporting to CSV
+
+```python
+df.to_csv('output.csv', index=False)
+```
+- Saves the DataFrame to a CSV file.
+- index=False prevents writing row numbers.
+
+### 📑 Exporting to Excel
+```python
+df.to_excel('output.xlsx', index=False)
+```
+- Writes the DataFrame to an Excel file.
+- Requires openpyxl or xlsxwriter library installed.
+
+
+**Exporting helps you save results, automate reports, and prepare datasets for dashboards or machine learning models.**
+
