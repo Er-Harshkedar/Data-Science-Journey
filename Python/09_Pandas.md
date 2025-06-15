@@ -289,7 +289,7 @@ df.sort_index()
 ```
 - Sorts the DataFrame by the row index.
 
-Sorting is especially useful when you're ranking data, preparing reports, or want to visually inspect ordered data.
+**Sorting is especially useful when you're ranking data, preparing reports, or want to visually inspect ordered data.**
 
 
 
@@ -343,6 +343,49 @@ df.replace(to_replace='?', value=np.nan)
 ```
 - Useful when missing values are denoted by symbols like '?' or 'N/A'.
 
-Handling missing values properly ensures clean and reliable data analysis.
+**Handling missing values properly ensures clean and reliable data analysis.**
 
 
+---
+
+
+## 📊 Grouping and Aggregation in Pandas
+
+Grouping and aggregation allow you to summarize your data — like calculating averages, counts, or sums grouped by a specific category.
+
+This is especially useful in analyzing sales, survey results, user behavior, etc.
+
+---
+
+### 👥 Grouping by a Column
+
+```python
+df.groupby('City')
+```
+- Groups rows based on the values in the 'City' column.
+
+### 🔢 Aggregating with Functions
+```python
+df.groupby('City')['Age'].mean()
+```
+- Calculates the average 'Age' for each 'City'.
+
+```python
+df.groupby('City').sum()
+```
+- Sums all numerric columns grouped by 'City'.
+
+### 🧠 Common Aggregation Functions
+- .mean() – Average
+- .sum() – Total
+- .count() – Number of items
+- .min() / .max() – Minimum / Maximum
+- .median() – Median value
+
+### 🎛️ Multiple Aggregations
+```python
+df.groupby('City')['Age'].agg(['mean', 'min', 'max'])
+```
+- Apply multiple aggregation functions at once.
+
+**Grouping and aggregation simplify complex data into meaningful summaries.**
