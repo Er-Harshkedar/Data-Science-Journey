@@ -290,3 +290,59 @@ df.sort_index()
 - Sorts the DataFrame by the row index.
 
 Sorting is especially useful when you're ranking data, preparing reports, or want to visually inspect ordered data.
+
+
+
+---
+
+
+## 🩹 Handling Missing Data in Pandas
+
+In real-world datasets, missing or null values are common. Pandas provides simple tools to detect, remove, or fill them.
+
+---
+
+### 🔍 Detecting Missing Values
+
+```python
+df.isnull()
+```
+- Returns a DataFrame of the same shape with True where values are missing.
+
+```python
+  df.isnull().sum()
+```
+- Counts missing values column-wise.
+
+### 🧹 Dropping Missing Data
+```python
+df.dropna()
+```
+- Removes rows with any missing values.
+
+```python
+df.dropna(axis=1)
+```
+- Remove column with any missing values.
+
+### 🧪 Filling Missing Data
+```python
+df.fillna(0)
+```
+- Replaces all missing values with 0.
+
+```python
+df.fillna(method='ffill')  # forward fill
+df.fillna(method='bfill')  # backward fill
+```
+- Propagates the next or previous valid value.
+
+### 🎯 Replacing Specific Values
+```python
+df.replace(to_replace='?', value=np.nan)
+```
+- Useful when missing values are denoted by symbols like '?' or 'N/A'.
+
+Handling missing values properly ensures clean and reliable data analysis.
+
+
