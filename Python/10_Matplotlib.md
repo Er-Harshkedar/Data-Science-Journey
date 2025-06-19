@@ -23,4 +23,31 @@ plt.grid(True)
 plt.show()
 ```
 
+**📝 Use When:
+You want to show trends or changes over time. Great for line charts of stock prices, sales over months, etc.
+
+**
+
+
+---
+
+## 📊 Bar Chart
+
+```python
+categories = ['A', 'B', 'C']
+values = [5, 7, 3]
+
+plt.bar(categories, values, color='orange')
+plt.title("Bar Chart")
+plt.xlabel("Category")
+plt.ylabel("Values")
+plt.show()
+```
+
+**📝 Use When:
+You need to compare quantities across different categories. Useful for visualizing survey responses, product sales, etc.**
+
+
+---
+
 
