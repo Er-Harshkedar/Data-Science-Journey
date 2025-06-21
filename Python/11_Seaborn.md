@@ -39,3 +39,8 @@ plt.show()
 ---
 
 
+## 🎯 3. Count Plot
+```python
+sns.countplot(x='Category', data=df)
+```
+**📝 Use When: You want to count how many times each category occurs.**
