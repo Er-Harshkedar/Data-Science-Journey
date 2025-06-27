@@ -81,4 +81,21 @@ sns.heatmap(corr, annot=True, cmap='coolwarm')
 plt.title("Correlation Heatmap")
 plt.show()
 ```
+**📝 Use When: You want to show correlation between numeric variables.**
 
+
+---
+
+
+## 🎨 Customizing Seaborn Plots
+- Use hue= to break data by category
+- Use palette= to change color scheme
+- Use style= and context= for theme control
+
+```python
+sns.set(style="whitegrid", context="talk")
+```
+
+
+## ✅ Summary
+Seaborn makes it simple to create beautiful and insightful visualizations with very little code. It's especially powerful when working with structured data in Pandas DataFrames.
