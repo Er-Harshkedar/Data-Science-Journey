@@ -97,7 +97,22 @@ sns.set(style="whitegrid", context="talk")
 ```
 
 
+---
+
+
 ## ✅ Summary
 Seaborn makes it simple to create beautiful and insightful visualizations with very little code. It's especially powerful when working with structured data in Pandas DataFrames.
+
+
+---
+
+
+---
+
+## 🔗 Resources
+
+📘 [Seaborn Tutorial – W3Schools](https://www.w3schools.com/python/matplotlib_seaborn.asp)  
+📘 [Seaborn Documentation (Official)](https://seaborn.pydata.org/)  
+📘 [Seaborn Gallery](https://seaborn.pydata.org/examples/index.html)
 
 
