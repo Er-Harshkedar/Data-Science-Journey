@@ -55,4 +55,38 @@ finally:
 - finally: Always runs — useful for cleanup
 
 
+---
 
+
+## 📦 Raising Custom Exceptions
+```python
+def check_age(age):
+    if age < 0:
+        raise ValueError("Age cannot be negative")
+    return age
+
+check_age(-5)
+```
+**📌 Use When: You want to define and raise your own error messages.**
+
+
+## 🧰 Best Practices
+- Use specific exceptions (not just except:).
+- Use finally to close files or release resources.
+- Don't silence errors without logging them.
+
+
+---
+
+
+## ✅ Summary
+Error handling allows you to write safer, more reliable code that doesn't break unexpectedly. It’s essential for writing production-quality applications.
+
+
+---
+
+
+## 🔗 Resources
+
+📘 [Python Try-Except – W3Schools](https://www.w3schools.com/python/python_try_except.asp)  
+📘 [Python Errors and Exceptions – Official Docs](https://docs.python.org/3/tutorial/errors.html)
