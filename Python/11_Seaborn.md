@@ -44,3 +44,41 @@ plt.show()
 sns.countplot(x='Category', data=df)
 ```
 **📝 Use When: You want to count how many times each category occurs.**
+
+
+
+---
+
+
+## 🔵 4. Scatter Plot
+```python
+tips = sns.load_dataset('tips')
+sns.scatterplot(x='total_bill', y='tip', data=tips)
+plt.title("Tip vs. Total Bill")
+plt.show()
+```
+**📝 Use When: You want to observe relationships between two numeric variables.**
+
+
+
+---
+
+
+## 📦 5. Box Plot
+```python
+sns.boxplot(x='day', y='total_bill', data=tips)
+```
+**📝 Use When: You want to visualize distributions and outliers.**
+
+
+---
+
+
+## 🌡️ 6. Heatmap (Correlation Matrix)
+```pytho
+corr = tips.corr()
+sns.heatmap(corr, annot=True, cmap='coolwarm')
+plt.title("Correlation Heatmap")
+plt.show()
+```
+
