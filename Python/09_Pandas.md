@@ -296,9 +296,15 @@ df.sort_index()
 ---
 
 
-## 🩹 Handling Missing Data in Pandas
+## 🧹 Data Cleaning with Pandas
 
-In real-world datasets, missing or null values are common. Pandas provides simple tools to detect, remove, or fill them.
+Data cleaning is the process of preparing raw data for analysis by handling missing values, fixing formatting issues, correcting data types, and removing inconsistencies. In real-world datasets, missing or null values are common. Pandas provides simple tools to detect, remove, or fill them.
+
+## 📌 Why Data Cleaning Matters
+
+- Raw data is messy and incomplete.
+- Clean data = reliable analysis.
+- Over 60% of the time in data science is spent cleaning data
 
 ---
 
@@ -336,6 +342,12 @@ df.fillna(method='ffill')  # forward fill
 df.fillna(method='bfill')  # backward fill
 ```
 - Propagates the next or previous valid value.
+
+### Remove Duplicates
+```python
+df.drop_duplicates(inplace=True)
+```
+- Removes repeated rows from your dataset.
 
 ### 🎯 Replacing Specific Values
 ```python
