@@ -43,3 +43,48 @@ print(math.ceil(2.3))      # Round up
 print(math.pi)             # Value of π
 ```
 - 📝 Use When: You need advanced mathematical functions (beyond + - * /).
+
+
+---
+
+
+## 🧪 4. random – Generate Random Numbers
+```python
+import random
+
+print(random.randint(1, 10))        # Random integer
+print(random.choice(['A', 'B']))    # Random element from list
+```
+- 📝 Use When: You want to generate random data, shuffle, or simulate randomness.
+
+
+---
+
+
+## 🧵 5. collections – Specialized Data Structures
+
+```python
+from collections import Counter
+
+c = Counter(['a', 'b', 'a', 'c', 'b'])
+print(c)  # Count of each element
+```
+- 📝 Use When: You need efficient counting, grouping, or dictionary operations.
+
+
+---
+
+
+## 🧰 6. itertools – Advanced Iterators
+
+```python
+from itertools import permutations
+
+for p in permutations([1, 2, 3]):
+    print(p)
+```
+- 📝 Use When: You’re working with combinations, permutations, or large loops.
+
+
+
+---
