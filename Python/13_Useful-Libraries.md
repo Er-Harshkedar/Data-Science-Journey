@@ -88,3 +88,21 @@ for p in permutations([1, 2, 3]):
 
 
 ---
+
+
+## 🧪 7. json – Working with JSON Data
+
+```python
+import json
+
+data = {'name': 'Alice', 'age': 25}
+json_str = json.dumps(data)       # Convert to JSON string
+parsed = json.loads(json_str)     # Parse JSON back to dict
+```
+- 📝 Use When: You need to send or receive data from APIs or store structured data.
+
+---
+
+
+## ✅ Summary
+These built-in libraries are essential tools for writing powerful and efficient Python scripts. Mastering them makes your code cleaner and more production-ready.
