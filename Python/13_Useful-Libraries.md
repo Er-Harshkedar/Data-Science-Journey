@@ -106,3 +106,9 @@ parsed = json.loads(json_str)     # Parse JSON back to dict
 
 ## ✅ Summary
 These built-in libraries are essential tools for writing powerful and efficient Python scripts. Mastering them makes your code cleaner and more production-ready.
+---
+
+## 🔗 Resources
+
+📘 [Python Standard Library Docs](https://docs.python.org/3/library/index.html)  
+📘 [W3Schools Python Modules](https://www.w3schools.com/python/python_modules.asp)
