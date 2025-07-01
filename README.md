@@ -31,6 +31,5 @@ Each folder contains topic-wise notes, code samples, and explanations I write in
 ├── Machine-Learning/      # Supervised and unsupervised learning
 ├── SQL/                   # MySQL basics, queries, joins, subqueries
 ├── Projects/              # Mini-projects and case studies
-├── Daily-Logs/            # Day-wise notes (optional structure)
 └── README.md              # You're here!
 
