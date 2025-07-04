@@ -114,7 +114,7 @@ print(arr[1:4])     # Output: [20 30 40]
 # more slicing
 x = np.array(range(18))
 print ('x:',x)     # Output: x: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 16 17]
-print (x[5:15:2])  # Output: [ 5  7  9 11 13]
+print (x[5:15:2])  # Output: [ 5  7  9 11 13] , It prints every 2nd element from index 5 to 14 in the array x.
 ```
 
 
