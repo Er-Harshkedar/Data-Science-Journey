@@ -8,7 +8,7 @@ Variables are containers used to store data values. In Python, you don't need to
 
 ```python
 name = "Harsh"        # string
-age = 25              # integer
+age = 23              # integer
 height = 5.9          # float
 is_student = True     # boolean
 ```
