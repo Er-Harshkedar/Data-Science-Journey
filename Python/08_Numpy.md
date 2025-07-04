@@ -133,9 +133,9 @@ print(a ** 2)       # [1 4 9]
 # if you need to join numpy arrays,
 # try hstack, vstack, column_stack, or concatenate
 np.hstack([a, b])       # [1,2,3,4,5,6]
-np.column_stack([a, b])  # [[1,4],
+np.column_stack([a, b])  ''' [[1,4],
                             [2,5],
-                            [3,6]]
+                            [3,6]] '''
 ```
 
 
