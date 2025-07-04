@@ -13,7 +13,10 @@ To install NumPy, run:
 pip install numpy
 ```
 
-Numpy provides the ndarray (n-dimensional array) which is faster and more memory-efficient than Python lists.
+---
+
+
+**Numpy provides the ndarray (n-dimensional array) which is faster and more memory-efficient than Python lists.**
 
 ## ⚡ Why Are NumPy Arrays Faster Than Python Lists?
 
