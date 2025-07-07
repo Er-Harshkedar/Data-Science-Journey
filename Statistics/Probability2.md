@@ -1,3 +1,20 @@
+# Types of Probability Distributions
+
+Probability distributions fall into two major categories: **Discrete** and **Continuous**.
+
+
+## Key Differences
+
+| Feature               | Discrete Distribution         | Continuous Distribution            |
+|-----------------------|-------------------------------|-------------------------------------|
+| Values                | Countable (0, 1, 2, …)        | Infinite/uncountable (real numbers) |
+| Probability of single value | Non-zero (e.g., P(X=2) = 0.2) | Always zero (P(X=2) = 0)           |
+| Represented by        | Probability Mass Function (PMF) | Probability Density Function (PDF) |
+| Examples              | Binomial, Poisson             | Normal, Exponential, Uniform        |
+
+
+---
+
 # 📊 Discrete Uniform Distribution
 
 ## What is a Discrete Uniform Distribution?
@@ -233,5 +250,63 @@ P(X = 5) = (3^5 * e^(-3)) / 5! = (243 * e^(-3)) / 120 ≈ 0.1008
 - Probability of more than one event in an infinitesimally small time interval is negligible
 
 
+---
 
 
+## 2. 📗 Continuous Distributions
+
+These apply when the random variable can take on **any value within a range** (i.e., infinitely many possible values).
+
+### Examples:
+- **Normal Distribution** (Gaussian): Bell-shaped curve
+- **Exponential Distribution**: Time between events
+- **Uniform Continuous Distribution**: Equal probability over an interval
+
+
+
+# Normal Distribution (Gaussian)
+
+The **Normal Distribution** is a continuous probability distribution that is **symmetrical** and shaped like a **bell curve**. It is one of the most widely used distributions in statistics and machine learning.
+
+---
+
+## 📘 Probability Density Function (PDF)
+
+**f(x) = (1 / (σ * √(2π))) * e^(-(x - μ)² / (2σ²))**
+
+
+Where:
+- `μ` = mean (center of the distribution)
+- `σ` = standard deviation (controls the spread)
+- `x` = variable
+- `e` = Euler’s number (~2.718)
+
+---
+
+## 🔍 Properties
+
+- Symmetrical about the mean
+- Mean = Median = Mode
+- Total area under the curve = 1
+- Defined for all real numbers: `x ∈ (−∞, ∞)`
+- 68-95-99.7 Rule:
+  - 68% data within 1σ
+  - 95% data within 2σ
+  - 99.7% data within 3σ
+
+
+## 🧮 Example
+
+If the heights of people are normally distributed with:
+
+- `μ = 170 cm`, `σ = 10 cm`
+
+Then the probability of someone being between 160 and 180 cm can be computed using the **Z-score** and normal tables or tools like SciPy.
+
+
+## 📈 Applications
+
+- Modeling natural phenomena (height, weight, IQ)
+- Central Limit Theorem (CLT)
+- Error terms in regression
+- Assumptions in many statistical tests (t-test, ANOVA, etc.)
