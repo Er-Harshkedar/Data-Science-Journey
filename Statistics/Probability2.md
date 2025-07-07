@@ -142,7 +142,6 @@ P(X = 6) = \binom{10}{6} (0.5)^6 (0.5)^4 = \binom{10}{6} (0.5)^{10} = 210 \times
 **Definition:**  
 The geometric distribution models the number of trials needed to get the first success in a series of independent Bernoulli trials (yes/no experiments), each with the same probability of success \( p \).
 
----
 
 ## Probability Mass Function (PMF)
 
@@ -180,11 +179,59 @@ If the probability of success \( p = 0.2 \) in each trial, what is the probabili
 P(X = 3) = (1 - 0.2)^{3-1} \times 0.2 = (0.8)^2 \times 0.2 = 0.128
 \]
 
+
+
+
+## Applications
+
+- Modeling number of positive responses in surveys
+- Predicting number of successful transactions or conversions
+- Quality control in manufacturing (defective vs non-defective items)
+- A/B testing in digital marketing
+
+  
 ---
 
-## Usage in Data Science
+# Poisson Distribution
 
-- Modeling the number of attempts until the first success (e.g., first click in an ad campaign).
-- Reliability analysis and survival analysis.
-- Any scenario with repeated independent trials until a success.
+The **Poisson Distribution** is a discrete probability distribution that expresses the probability of a given number of events occurring in a **fixed interval of time or space**, assuming these events occur with a known constant rate and **independently** of the time since the last event.
+
+
+## 📘 Probability Mass Function (PMF)
+
+**P(X = k) = (λ^k * e^(-λ)) / k!**
+
+
+Where:
+- `X`: Number of occurrences (events)
+- `λ` (lambda): Average rate (mean number of events in a time/space unit)
+- `e`: Euler’s number (~2.718)
+- `k`: Actual number of events (k = 0, 1, 2, ...)
+
+---
+
+## 🧮 Example
+
+Suppose a website gets on average 3 user queries per minute. What is the probability of getting exactly 5 queries in a given minute?
+
+λ = 3, k = 5
+P(X = 5) = (3^5 * e^(-3)) / 5! = (243 * e^(-3)) / 120 ≈ 0.1008
+
+## 🧠 Applications
+
+- Modeling number of phone calls at a call center
+- Number of decay events from a radioactive source
+- Number of customer arrivals at a store per hour
+- Defects per unit area in quality control
+
+
+## ✅ Conditions to Use Poisson Distribution
+
+- Events occur independently
+- Events occur at a constant average rate
+- Two events cannot occur at the exact same instant
+- Probability of more than one event in an infinitesimally small time interval is negligible
+
+
+
 
