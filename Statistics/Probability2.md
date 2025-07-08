@@ -360,3 +360,48 @@ P(X > 1/6) = e^(-3 * 1/6) = e^(-0.5) ≈ 0.6065
 - Lifetimes of radioactive atoms
 - Modeling waiting times between independent events
 
+
+---
+
+
+# Continuous Uniform Distribution
+
+The **Continuous Uniform Distribution** describes a situation where **all outcomes in a given interval are equally likely**. It is the continuous counterpart of the discrete uniform distribution.
+
+
+## 📘 Probability Density Function (PDF)
+
+For a uniform distribution between `a` and `b`:
+
+f(x) = 1 / (b - a), for a ≤ x ≤ b
+
+Outside the interval `[a, b]`, the probability is 0.
+
+## 🔍 Properties
+
+- **Mean**:
+E[X] = (a + b) / 2
+
+
+- **Variance**:  
+Var(X) = (b - a)² / 12
+
+- The probability is spread **evenly** across the interval
+- The graph of the PDF is a horizontal line
+
+
+## 🧮 Example
+
+Suppose a bus arrives at a random time between 10:00 AM and 10:30 AM.  
+Let `X ~ U(0, 30)` (in minutes).
+
+- The probability the bus arrives between 10 and 10:10 (i.e., `X ≤ 10`) is:
+P(X ≤ 10) = (10 - 0) / (30 - 0) = 1/3
+
+## 📈 Applications
+
+- Random number generation
+- Simulation
+- Modeling waiting times with no bias or pattern
+- When you know the minimum and maximum but nothing else about distribution
+
