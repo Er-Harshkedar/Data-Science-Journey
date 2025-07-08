@@ -310,3 +310,53 @@ Then the probability of someone being between 160 and 180 cm can be computed usi
 - Central Limit Theorem (CLT)
 - Error terms in regression
 - Assumptions in many statistical tests (t-test, ANOVA, etc.)
+
+
+---
+
+
+# Exponential Distribution
+
+The **Exponential Distribution** is a continuous probability distribution used to model the **time between events** in a Poisson process (i.e., events that happen independently at a constant average rate).
+
+
+## 📘 Probability Density Function (PDF)
+
+**f(x; λ) = λ * e^(-λx), for x ≥ 0**
+
+Where:
+- `λ` is the rate parameter (λ > 0)
+- `x` is the time between events
+- `e` is Euler’s number (~2.718)
+
+## 🔍 Properties
+
+- Defined only for non-negative values: `x ≥ 0`
+- Mean (Expected value):
+E[X] = 1 / λ
+
+- Variance:  
+Var(X) = 1 / λ²
+
+- Memoryless Property:  
+The exponential distribution is the only continuous distribution that is **memoryless**, meaning:  
+P(X > s + t | X > s) = P(X > t)
+
+
+
+## 🧮 Example
+
+Let’s say calls come into a call center at an average rate of 3 per hour (λ = 3).
+
+Then the probability that the next call arrives in more than 10 minutes (i.e., `x > 1/6 hour`) is:
+
+P(X > 1/6) = e^(-3 * 1/6) = e^(-0.5) ≈ 0.6065
+
+
+## 📈 Applications
+
+- Time between arrivals in queueing systems (e.g., customer service, web requests)
+- Time until failure of an electronic device
+- Lifetimes of radioactive atoms
+- Modeling waiting times between independent events
+
