@@ -59,15 +59,17 @@ These represent **measurable quantities** and involve numbers.
 The **mean** is the sum of all values divided by the total number of values.
 
 ### 🔹 Formula:
-\[
-\text{Mean} (\mu \text{ or } \bar{x}) = \frac{\sum x_i}{n}
-\]
+
+**Mean (μ or x̄) = (x₁ + x₂ + ... + xₙ) / n
+
+or
+
+Mean = Σxᵢ / n
+**
 
 ### 🔹 Example:
 If values are 4, 6, 8:
-\[
-\bar{x} = \frac{4 + 6 + 8}{3} = 6
-\]
+Mean = (4 + 6 + 8) / 3 = 6
 
 ---
 
