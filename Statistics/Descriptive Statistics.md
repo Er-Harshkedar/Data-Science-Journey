@@ -121,3 +121,86 @@ The **mode** is the value(s) that appear **most frequently** in the data.
   Mode > Median > Mean
 
 
+---
+
+
+
+# Measures of Dispersion
+
+Measures of dispersion describe **how spread out the values** in a dataset are. While central tendency tells us the "center", dispersion tells us **how much the data varies**.
+
+---
+
+## 1. Range
+
+The **range** is the difference between the maximum and minimum values.
+
+**Formula:**
+
+    Range = Max - Min
+
+**Example:**
+
+    Data: 5, 7, 10, 12 → Range = 12 - 5 = 7
+
+---
+
+## 2. Variance (σ²)
+
+Variance measures the **average squared distance** from the mean.
+
+**Formula (Population):**
+
+    σ² = Σ(xᵢ - μ)² / N
+
+**Formula (Sample):**
+
+    s² = Σ(xᵢ - x̄)² / (n - 1)
+
+> Use population formula when you have data for the entire group; use sample formula when working with a subset.
+
+---
+
+## 3. Standard Deviation (σ or s)
+
+Standard deviation is the **square root of variance**. It tells you **how much data deviates from the mean** in original units.
+
+**Formula:**
+
+    σ = √(σ²)   or   s = √(s²)
+
+**Interpretation:**
+- A small standard deviation → data is close to the mean
+- A large standard deviation → data is spread out
+
+---
+
+## 4. Interquartile Range (IQR)
+
+IQR measures the range of the **middle 50% of the data**. It helps eliminate the effect of outliers.
+
+**Formula:**
+
+    IQR = Q3 - Q1
+
+Where:
+- Q1 = 25th percentile
+- Q3 = 75th percentile
+
+---
+
+## Summary Table
+
+| Measure        | Description                          | Sensitive to Outliers? |
+|----------------|--------------------------------------|-------------------------|
+| Range          | Max - Min                            | ✅ Yes                  |
+| Variance       | Average squared deviation from mean  | ✅ Yes                  |
+| Standard Dev.  | Spread in same units as data         | ✅ Yes                  |
+| IQR            | Spread of middle 50%                 | ❌ No                   |
+
+---
+
+## Visual Tip
+
+- **IQR** is used in **box plots**
+- **Standard deviation** is used in **bell curves (normal distribution)**
