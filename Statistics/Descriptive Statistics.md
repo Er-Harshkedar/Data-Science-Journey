@@ -204,3 +204,102 @@ Where:
 
 - **IQR** is used in **box plots**
 - **Standard deviation** is used in **bell curves (normal distribution)**
+
+
+
+# Skewness and Kurtosis
+
+In statistics, **Skewness** and **Kurtosis** help us understand the *shape and characteristics* of a data distribution beyond basic metrics like mean and standard deviation.
+
+---
+
+## 📈 Skewness
+
+Skewness tells us **about the symmetry** of a distribution.
+- It tells us **whether the data is balanced** or **pulled** toward one side.
+- A skewed distribution means one tail is longer or fatter than the other.
+- It affects the relationship between **mean, median, and mode**.
+
+### Types of Skewness:
+
+1. **Positive Skew (Right-Skewed)**  
+   - Tail is on the **right** side  
+   - Mean > Median > Mode
+
+2. **Negative Skew (Left-Skewed)**  
+   - Tail is on the **left** side  
+   - Mean < Median < Mode
+
+3. **Zero Skew (Symmetrical)**  
+   - Perfectly symmetrical (like a normal distribution)  
+   - Mean = Median = Mode
+
+### Formula (Sample Skewness):
+
+    Skewness = [n / ((n-1)(n-2))] * Σ[(xᵢ - x̄)/s]³
+
+Where:
+- n = sample size
+- x̄ = sample mean
+- s = sample standard deviation
+
+> In practice, libraries like `scipy.stats.skew()` or `pandas.Series.skew()` are used.
+
+---
+
+## 🔼 Kurtosis
+
+Kurtosis tells us **how peaked or flat** a distribution is, compared to a normal distribution.
+- It describes the **shape of the tails** and **sharpness of the peak** of a distribution.
+- High kurtosis means more data in the tails and possibly more **outliers**.
+- Low kurtosis means fewer outliers and a flatter distribution.
+
+### Types of Kurtosis:
+
+1. **Mesokurtic (Kurtosis = 3)**  
+   - Normal distribution
+
+2. **Leptokurtic (Kurtosis > 3)**  
+   - Tall, narrow peak  
+   - Heavy tails (more outliers)
+
+3. **Platykurtic (Kurtosis < 3)**  
+   - Flat-topped curve  
+   - Light tails (fewer outliers)
+
+### Formula (Sample Kurtosis):
+
+    Kurtosis = [n(n+1) / ((n-1)(n-2)(n-3))] * Σ[(xᵢ - x̄)/s]^4 - [3(n-1)² / (n-2)(n-3)]
+
+> Excess Kurtosis = Kurtosis - 3  
+> Most libraries like `scipy.stats.kurtosis()` return **excess kurtosis** by default.
+
+---
+
+## Summary Table
+
+| Measure   | Description                             | Normal Value |
+|-----------|-----------------------------------------|--------------|
+| Skewness  | Symmetry of distribution                | 0            |
+| Kurtosis  | Peakedness or tail heaviness            | 3 (or 0 excess) |
+
+---
+
+## Quick Tip:
+
+- Use **Skewness** to check if the mean is being dragged by outliers.
+- Use **Kurtosis** to check the likelihood of **extreme values**.
+
+---
+
+## ✅ Pro Tip
+
+Use Python libraries to calculate them:
+```python
+from scipy.stats import skew, kurtosis
+
+skewness_value = skew(data)
+kurtosis_value = kurtosis(data)  # by default, excess kurtosis
+```
+
+
