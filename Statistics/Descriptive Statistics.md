@@ -334,3 +334,40 @@ A student scored 85.
 
 Z = (85 - 70) / 10 = 1.5
 
+👉 This means the score is **1.5 standard deviations above the mean**.
+
+---
+
+## 2. Percentiles and Quartiles
+
+Percentiles divide the data into **100 equal parts**.  
+Each percentile shows the value **below which a certain percentage** of observations fall.
+
+### 🔹 Common Percentiles:
+- **25th percentile** = Q1 (First Quartile)
+- **50th percentile** = Median = Q2
+- **75th percentile** = Q3 (Third Quartile)
+
+### 🔹 Use Cases:
+- Percentile scores in exams
+- Identifying outliers
+- Creating box plots
+
+---
+
+## 3. Interpreting Percentiles:
+
+- If a student is at the **90th percentile**, it means they scored **better than 90%** of the class.
+- If an income is at the **25th percentile**, it means 25% of incomes are **less than or equal to** that value.
+
+---
+
+## 💡 Quartiles Recap:
+
+| Quartile | Percentile | Meaning                        |
+|----------|------------|--------------------------------|
+| Q1       | 25th       | Lower quartile                 |
+| Q2       | 50th       | Median of the dataset          |
+| Q3       | 75th       | Upper quartile                 |
+| IQR      | Q3 - Q1    | Range of middle 50% of values  |
+
