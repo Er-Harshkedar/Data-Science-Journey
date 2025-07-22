@@ -303,3 +303,34 @@ kurtosis_value = kurtosis(data)  # by default, excess kurtosis
 ```
 
 
+---
+
+
+# 📊 Z-Score and Percentiles
+
+---
+
+## 1. Z-Score
+
+A **Z-score** (also called a **standard score**) tells us how many **standard deviations** a data point is **from the mean**.
+
+### 🔹 Formula:
+Z = (X - μ) / σ
+
+
+Where:  
+- `X` = data point  
+- `μ` = mean of the distribution  
+- `σ` = standard deviation  
+
+### 🔹 Interpretation:
+- `Z = 0` → the value is exactly the mean  
+- `Z > 0` → the value is above the mean  
+- `Z < 0` → the value is below the mean  
+
+### ✅ Example:
+Suppose a test has a mean score of 70 and standard deviation of 10.  
+A student scored 85.
+
+Z = (85 - 70) / 10 = 1.5
+
