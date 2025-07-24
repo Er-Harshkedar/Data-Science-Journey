@@ -26,3 +26,55 @@ The Central Limit Theorem says that as the sample size increases (typically n �
 
 ### Example:
 If you repeatedly take random samples of 100 students and calculate their average height, those averages will form a bell-shaped curve — even if individual heights are not normally distributed.
+
+
+---
+
+## 📌 Confidence Intervals
+
+### ✅ Definition
+A **confidence interval** gives a range of values that is likely to contain the population parameter (like mean or proportion) with a certain level of confidence (e.g., 95%).
+
+---
+
+### ✅ Interpretation
+A 95% confidence interval means **we are 95% confident that the true population parameter lies within this interval**.
+
+---
+
+### ✅ Formula (Population Mean, Known σ)
+
+CI = x̄ ± Z * (σ / √n)
+
+- `x̄`: sample mean  
+- `Z`: Z-score (e.g., 1.96 for 95% confidence)  
+- `σ`: population standard deviation  
+- `n`: sample size
+
+
+---
+
+### ✅ Formula (Population Mean, Unknown σ)
+CI = x̄ ± t * (s / √n)
+
+
+- `t`: t-score (based on degrees of freedom)  
+- `s`: sample standard deviation
+
+---
+
+### ✅ Example
+
+Suppose:
+- Sample mean height = 170 cm  
+- Sample standard deviation (s) = 10 cm  
+- Sample size (n) = 100  
+- Confidence level = 95% → Z = 1.96
+
+CI = 170 ± 1.96 * (10 / √100)
+= 170 ± 1.96
+= (168.04 cm, 171.96 cm)
+
+
+We are 95% confident that the average height of the population lies between **168.04 cm and 171.96 cm**.
+
