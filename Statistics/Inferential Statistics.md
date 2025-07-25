@@ -145,5 +145,10 @@ You want to test if the average delivery time of a food service is 30 minutes.
 - Sample mean = 28, s = 4, n = 25  
 - Use t-test since σ unknown and n < 30
 
+t = (x̄ - μ) / (s / √n)
+= (28 - 30) / (4 / √25)
+= -2 / 0.8 = -2.5
 
+
+Compare t with critical t-value for α = 0.05 → decide to reject or not reject H₀.
 
