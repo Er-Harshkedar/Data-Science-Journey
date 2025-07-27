@@ -152,3 +152,40 @@ t = (x̄ - μ) / (s / √n)
 
 Compare t with critical t-value for α = 0.05 → decide to reject or not reject H₀.
 
+
+---
+
+
+## 📌 Types of Errors in Hypothesis Testing
+
+### ✅ Overview
+When we perform hypothesis testing, there is always a risk of making an incorrect decision. These risks are classified into two types of errors:
+
+---
+
+### ✅ Type I Error (False Positive)
+
+- **Definition**: Rejecting the null hypothesis (H₀) when it is actually true.
+- **Probability**: Denoted by **α** (alpha), which is the significance level.
+- **Example**: Convicting an innocent person.
+
+> **Interpretation**: You concluded there is an effect when there isn't one.
+
+---
+
+### ✅ Type II Error (False Negative)
+
+- **Definition**: Failing to reject the null hypothesis (H₀) when it is actually false.
+- **Probability**: Denoted by **β** (beta).
+- **Example**: Letting a guilty person go free.
+
+> **Interpretation**: You missed detecting a real effect.
+
+---
+
+### ✅ Power of a Test
+
+- **Definition**: The probability of correctly rejecting a false null hypothesis.
+- **Formula**:  
+Power = 1 - β
+
