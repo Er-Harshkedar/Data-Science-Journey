@@ -189,3 +189,16 @@ When we perform hypothesis testing, there is always a risk of making an incorrec
 - **Formula**:  
 Power = 1 - β
 
+
+> Higher power means a better chance of detecting an effect when it truly exists.
+
+---
+
+### ✅ Summary Table
+
+| Decision \ Reality     | H₀ True       | H₀ False      |
+|------------------------|---------------|----------------|
+| **Reject H₀**          | Type I Error  | ✔️ Correct      |
+| **Fail to Reject H₀**  | ✔️ Correct     | Type II Error  |
+
+---
