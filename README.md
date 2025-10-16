@@ -17,7 +17,7 @@ Each folder contains topic-wise notes, code samples, and explanations I write in
 
 - To track my learning journey
 - To build discipline through daily/weekly contributions
-- To create a portfolio of real understanding (not just tutorials)
+- To create a portfolio of real understanding 
 
 ---
 
